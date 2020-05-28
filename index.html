@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      section {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(87, 255, 95);
+        margin-top: 20px;
+      }
+      span {
+        width: 10px;
+        height: 10px;
+        border-bottom-left-radius: 100%;
+        border-top-right-radius: 100%;
+      }
+      .on {
+        background-color: rgb(113, 1, 218);
+      }
+      .off {
+        background-color: rgba(29, 29, 29, 0.377);
+      }
+      h1 {
+        text-align: center;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        align-items: center;
+        width: max-content;
+      }
+    </style>
+
+    <div>
+      <h1>Conway's GOL</h1>
+      <button id="stop">Stop</button>
+      <button id="start">Step Through</button>
+    </div>
+    <section id="canvas"></section>
+  </body>
+  <script type="text/javascript" src="conway.js"></script>
+</html>
